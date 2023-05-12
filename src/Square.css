@@ -1,0 +1,11 @@
+.Square {
+    width: 35px;
+    height: 35px;
+    border: 1px solid black;
+    text-align: center;
+    margin: 5px;
+}
+
+.Square-color {
+    background-color: green;
+}

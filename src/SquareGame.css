@@ -1,0 +1,94 @@
+.SquareGame {
+    width: 60%;
+    padding: 60px;
+}
+
+.SquareGame-heading {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    padding: 10px 15px;
+    flex-wrap: wrap;
+}
+
+.SquareGame-heading>* {
+    padding: 0 25px;
+}
+
+.SquareGame-heading p {
+    flex-basis: 78px;
+    border: 1px solid lightgray;
+    padding: 15px 20px;
+    margin: 2.5px;
+}
+
+.SquareGame-heading h1 {
+    font-size: 21px;
+    flex-basis: 350px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+@media only screen and (max-width: 1297px) {
+    .SquareGame-heading h1 {
+        order: 4;
+        flex-grow: 1;
+    }
+}
+
+.SquareGame-heading>*:last-child {
+    /* margin-left: auto; */
+}
+
+.SquareGame-board {
+    border: 1px solid lightgray;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.SquareGame-board-squares {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 250px;
+    height: 250px;
+    justify-content: space-around;
+    padding-bottom: 40px;
+}
+
+.SquareGame-board-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.SquareGame-board-buttons button {
+    border: 1px solid lightgray;
+    padding: 20px 40px;
+    margin: 0 2.5px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.SquareGame-board-buttons button:hover {
+    background-color: lightgray;
+}
+
+.SquareGame-history button {
+    border: 1px solid lightgray;
+    padding: 15px 20px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.SquareGame-history button:hover {
+    background-color: lightgray;
+}
+
+.SquareGame-gameover {
+    text-align: center;
+    letter-spacing: 2.5px;
+    color: rgb(211, 66, 14);
+    font-weight: 700;
+    font-size: 18px;
+}
